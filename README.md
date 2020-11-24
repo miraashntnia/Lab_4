@@ -1,24 +1,39 @@
-#PROGRAM LIST MAHASISWA
+Praktikum 4
+Program Menghitung Nilai Mahasiswa
+Pada praktek kali ini, saya mencoba membuat program menentukan nilai mahasiswa dengan menggunakan list.
 
-daftar_nilai = [] mendeklarasikan variabel dan list
-while True : untuk melakukan perulangan
-line dibawah ini untuk menginputkan data saat program di jalankan
-nama = input("input nama : ")
-NIM = input("input NIM : ")
-tugas = int(input("input Tugas : "))
-UTS = int(input("input UTS : "))
-UAS =int(input("input UAS : "))
-akhir = (tugas * 30/100)+(UTS * 35/100)+(UAS * 35/100) rumus untuk mendapatkan nilai akhir
-daftar_nilai.append([nama, int(NIM), int(tugas), int(UTS), int(UAS), int(akhir)]) untuk memasukan data ke list
-kondisi untuk melanjutkan atau menghentikan jika input "t"
-if (input("input data lagi (y/t)?") == 't'):
-        break
-untuk membentuk tabel dan menampilkan data
-print("==============================================================")
-print("| no |      Nama     |    NIM    | Tugas | UTS | UAS | Akhir |")
-print("==============================================================")
-untuk menentukan id item dan format print
-i=0
-for item in daftar_nilai:
-    i+=1
-    print("| {no:2d} |  {nama:12s} | {NIM:9d} | {tugas:5d} | {UTS:3d} | {UAS:3d} | {akhir:5.2f} |".format(nama=item[0], NIM=item[1], tugas=item[2], UTS=item[3], UAS=item[4], akhir=item[5], no=i))
+Source Code dan Penjelasan
+print("==================================================================")
+print("|                 PROGRAM INPUT NILAI MAHASISWA                  |")
+print("==================================================================")
+
+nilai = []                                                            ## Membuat list nilai kosong
+perulangan = True                                                     ## Membuat variable perulangan "true" untuk logika looping
+
+while perulangan:                                                     ## Looping
+    nama = input("Masukkan Nama: ")                                   ## Membuat variable nama untuk list dan menginputkan datanya
+    nim = input("Masukkan NIM: ")                                     ## Membuat variable nim untuk list dan menginputkan datanya
+    nilaiTugas = int(input("Masukkan Nilai Tugas: "))                 ## Membuat variable nilaiTugas untuk list dan menginputkan datanya
+    nilaiUts = int(input("Masukkan Nilai UTS: "))                     ## Membuat variable nilaiUts untuk list dan menginputkan datanya
+    nilaiUas = int(input("Masukkan Nilai UAS: ")                      ## Membuat variable nilaiUas untuk list dan menginputkan datanya
+    nilaiAkhir = (nilaiTugas * 30/100) + (nilaiUts * 35/100) + (nilaiUas * 35/100) ## Membuat variable nilaiAkhir untuk list dan menggabungkan nilaiTugas, uts, dan uas dengan syarat yang sudah ditentukan.
+
+    nilai.append([nama, nim, nilaiTugas, nilaiUts, nilaiUas, int(nilaiAkhir)])  ## Menambahkan semua list nama sampai nilaiAkhir ke list nilai.
+    if (input("Tambah data (y/t)? ") == 't'):                         ## Jika kita tidak menambahkan data ketik "t" untuk mengakhiri
+        perulangan = False                                            ## Looping selesai
+
+print("\n                      DAFTAR NILAI MAHASISWA                    ")
+print("==================================================================")
+print("| No |     Nama     |    NIM    | Tugas |  UTS  |  UAS  |  Akhir |")
+print("==================================================================")
+i = 0                                                                         ## looping dimulai dari angka nol untuk mengurutkan data
+for item in nilai:                                                            ## looping dari list nilai
+    i += 1
+    print("| {no:2d} | {nama:12s} | {nim:9s} | {nilaiTugas:5d} | {nilaiUts:5d} | {nilaiUas:5d} | {nilaiAkhir:6.2f} |"           ## Mengatur posisi tabel
+          .format(no=i, nama=item[0], nim=item[1], nilaiTugas=item[2], nilaiUts=item[3], nilaiUas=item[4], nilaiAkhir=item[5])) ## Mengambil list yg sudah diinputkan didalam list nilai.
+print("==================================================================")
+Flowchart FLOWCHART
+
+Screenshot Input Input
+
+Screenshot Ouput Output

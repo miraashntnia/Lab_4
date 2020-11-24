@@ -9,9 +9,9 @@ Program Menambahkan Data Kedalam Sebuah List Dengan Rincian Sebagai Berikut:
 
 1. Untuk program meminta masukan data sebanyak-banyaknya maka gunakanlah source code perulangan seperti berikut:
 
-> nilai = []                              ## Membuat list nilai kosong
-> perulangan = True                       ## Membuat variable perulangan "true" untuk logika looping
-> while perulangan                        ## Looping
+Nilai = []                              ## Membuat list nilai kosong
+Perulangan = True                       ## Membuat variable perulangan "true" untuk logika looping
+While perulangan                        ## Looping
 
 2. Untuk program penginputan data gunakanlah source code sebagai berikut: 
 

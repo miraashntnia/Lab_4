@@ -1,4 +1,14 @@
-# **Tugas Praktikum 4**
+```
+                                                            MIRA SHINTANIA
+                                                              312010290
+                                                               TI.20.B2
+
+```
+
+
+
+
+# **Tugas Praktikum 4*
 Program Menambahkan Data Kedalam Sebuah List Dengan Rincian Sebagai Berikut:
 - Program meminta memasukan data sebanyak-banyaknya (gunakan perulangan)
 - Tampilkan pernyataan untuk menambah data (y/t), apabila jawabannya t (tidak), maka program akan menampilkan daftar datanya.

@@ -1,39 +1,41 @@
-Praktikum 4
-Program Menghitung Nilai Mahasiswa
-Pada praktek kali ini, saya mencoba membuat program menentukan nilai mahasiswa dengan menggunakan list.
+# **Tugas Praktikum 4**
+Program Menambahkan Data Kedalam Sebuah List Dengan Rincian Sebagai Berikut:
+- Program meminta memasukan data sebanyak-banyaknya (gunakan perulangan)
+- Tampilkan pernyataan untuk menambah data (y/t), apabila jawabannya t (tidak), maka program akan menampilkan daftar datanya.
+- Nilai akhir diambil dari perhitungan 3 komponen nilai (tugas 30%, UTS 35%, UAS: 35%)
+- Membuat Flowchart
 
-Source Code dan Penjelasan
-print("==================================================================")
-print("|                 PROGRAM INPUT NILAI MAHASISWA                  |")
-print("==================================================================")
+### **Source Code**
 
-nilai = []                                                            ## Membuat list nilai kosong
-perulangan = True                                                     ## Membuat variable perulangan "true" untuk logika looping
+1. Untuk program meminta masukan data sebanyak-banyaknya maka gunakanlah source code perulangan seperti berikut:
 
-while perulangan:                                                     ## Looping
-    nama = input("Masukkan Nama: ")                                   ## Membuat variable nama untuk list dan menginputkan datanya
-    nim = input("Masukkan NIM: ")                                     ## Membuat variable nim untuk list dan menginputkan datanya
-    nilaiTugas = int(input("Masukkan Nilai Tugas: "))                 ## Membuat variable nilaiTugas untuk list dan menginputkan datanya
-    nilaiUts = int(input("Masukkan Nilai UTS: "))                     ## Membuat variable nilaiUts untuk list dan menginputkan datanya
-    nilaiUas = int(input("Masukkan Nilai UAS: ")                      ## Membuat variable nilaiUas untuk list dan menginputkan datanya
-    nilaiAkhir = (nilaiTugas * 30/100) + (nilaiUts * 35/100) + (nilaiUas * 35/100) ## Membuat variable nilaiAkhir untuk list dan menggabungkan nilaiTugas, uts, dan uas dengan syarat yang sudah ditentukan.
+nilai = []                                                                    ## Membuat list nilai kosong
+perulangan = True                                                             ## Membuat variable perulangan "true" untuk logika looping
+while perulangan:                                                             ## Looping
 
-    nilai.append([nama, nim, nilaiTugas, nilaiUts, nilaiUas, int(nilaiAkhir)])  ## Menambahkan semua list nama sampai nilaiAkhir ke list nilai.
-    if (input("Tambah data (y/t)? ") == 't'):                         ## Jika kita tidak menambahkan data ketik "t" untuk mengakhiri
-        perulangan = False                                            ## Looping selesai
+2. Untuk program penginputan data gunakanlah source code sebagai berikut: 
 
-print("\n                      DAFTAR NILAI MAHASISWA                    ")
-print("==================================================================")
-print("| No |     Nama     |    NIM    | Tugas |  UTS  |  UAS  |  Akhir |")
-print("==================================================================")
-i = 0                                                                         ## looping dimulai dari angka nol untuk mengurutkan data
-for item in nilai:                                                            ## looping dari list nilai
-    i += 1
-    print("| {no:2d} | {nama:12s} | {nim:9s} | {nilaiTugas:5d} | {nilaiUts:5d} | {nilaiUas:5d} | {nilaiAkhir:6.2f} |"           ## Mengatur posisi tabel
-          .format(no=i, nama=item[0], nim=item[1], nilaiTugas=item[2], nilaiUts=item[3], nilaiUas=item[4], nilaiAkhir=item[5])) ## Mengambil list yg sudah diinputkan didalam list nilai.
-print("==================================================================")
-Flowchart FLOWCHART
+nama = input("Masukkan Nama: ")                                               ## Membuat variable nama untuk list dan menginputkan datanya
+nim = input("Masukkan NIM: ")                                                 ## Membuat variable nim untuk list dan menginputkan datanya
+nilaiTugas = int(input("Masukkan Nilai Tugas: "))                             ## Membuat variable nilaiTugas untuk list dan menginputkan datanya
+nilaiUts = int(input("Masukkan Nilai UTS: "))                                 ## Membuat variable nilaiUts untuk list dan menginputkan datanya
+nilaiUas = int(input("Masukkan Nilai UAS: ")                                  ## Membuat variable nilaiUas untuk list dan menginputkan datanya
 
-Screenshot Input Input
+3. Untuk mendapatkan hasil output dengan nilai akhir diambil dari 3 komponen nilai, gunakan source code sebagai berikut:
 
-Screenshot Ouput Output
+nilaiAkhir = (nilaiTugas * 30/100) + (nilaiUts * 35/100) + (nilaiUas * 35/100) ## Membuat variable nilaiAkhir untuk list dan menggabungkan nilaiTugas, uts, dan uas dengan syarat yang sudah ditentukan.
+
+4. Untuk menambahkan semua list, gunakan source code berikut:
+
+nilai.append([nama, nim, nilaiTugas, nilaiUts, nilaiUas, int(nilaiAkhir)])     ## Menambahkan semua list dari nama sampai nilaiAkhir ke list nilai.
+
+5. Untuk menampilkan pertanyaan menambah data atau tidak, maka gunakan source code sebagai berikut:
+
+if (input("Tambah data (y/t)? ") == 't'):                                      ## Jika kita tidak menambahkan data ketik "t" untuk mengakhiri
+perulangan = False                                                             ## Looping selesai
+
+### **Flowchart**
+
+### **Screenshot Input**
+
+### **Screenshot Ouput**

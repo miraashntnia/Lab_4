@@ -1,7 +1,7 @@
 ```
-                                                            MIRA SHINTANIA
-                                                              312010290
-                                                               TI.20.B2
+                                                         MIRA SHINTANIA
+                                                           312010290
+                                                            TI.20.B2
 
 ```
 

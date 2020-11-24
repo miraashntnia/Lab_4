@@ -8,14 +8,15 @@
 
 
 
-# **Tugas Praktikum 4*
+# **Tugas Praktikum 4**
 Program Menambahkan Data Kedalam Sebuah List Dengan Rincian Sebagai Berikut:
 - Program meminta memasukan data sebanyak-banyaknya (gunakan perulangan)
 - Tampilkan pernyataan untuk menambah data (y/t), apabila jawabannya t (tidak), maka program akan menampilkan daftar datanya.
 - Nilai akhir diambil dari perhitungan 3 komponen nilai (tugas 30%, UTS 35%, UAS: 35%)
 - Membuat Flowchart
 
-### **Source Code**
+
+## **Source Code**
 
 1. Untuk program meminta masukan data sebanyak-banyaknya maka gunakanlah source code perulangan seperti berikut:
 ```
@@ -49,8 +50,13 @@ if (input("Tambah data (y/t)? ") == 't'):                                 ## Jik
 perulangan = False                                                        ## Looping selesai
 ```
 
-### **Flowchart**
+## **Flowchart**
 
-### **Screenshot Input**
+## **Screenshot Input**
 
-### **Screenshot Ouput**
+<img width="768" alt="Praktikum 4 Input1" src="https://user-images.githubusercontent.com/72985112/100082766-3af63080-2e7b-11eb-8f70-49d3276392b3.png">
+<img width="820" alt="Praktikum 4 Input2" src="https://user-images.githubusercontent.com/72985112/100082780-3f224e00-2e7b-11eb-828a-3ad206d4d01f.png">
+
+## **Screenshot Ouput**
+
+<img width="785" alt="Praktikum 4 Output" src="https://user-images.githubusercontent.com/72985112/100082881-5bbe8600-2e7b-11eb-80e2-d0b15666b067.png">

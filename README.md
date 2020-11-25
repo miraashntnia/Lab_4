@@ -17,6 +17,9 @@ Program Menambahkan Data Kedalam Sebuah List Dengan Rincian Sebagai Berikut:
 
 
 ## **Source Code**
+Berikut Source code lengkapnya: [https://github.com/miraashntnia/Lab_4/blob/master/Tugas%20Praktikum%204.py](url)
+
+## **Penjelasan**
 
 1. Untuk program meminta masukan data sebanyak-banyaknya maka gunakanlah source code perulangan seperti berikut:
 ```

@@ -51,6 +51,7 @@ perulangan = False                                                        ## Loo
 ```
 
 ## **Flowchart**
+![github](https://github.com/mirashintania/Lab_4/blob/master/FLOWCHART.png)
 
 ## **Screenshot Input**
 
